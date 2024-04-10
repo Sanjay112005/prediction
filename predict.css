@@ -1,0 +1,130 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+
+
+.container {
+  padding-top: 60px; /* Adjust for navigation bar height */
+}
+
+
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px 0;
+}
+
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: 250px;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: 250px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d10813;
+}
+
+/* Prediction result styles */
+#prediction-result {
+  display: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#prediction-result h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#predicted-revenue {
+  font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}

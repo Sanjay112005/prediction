@@ -1,0 +1,123 @@
+nav {
+  background-color:transparent;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* justify-content: start; */
+  z-index: 1000;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content:start;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color:yellow;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: gradient-animation 5s ease infinite alternate;
+  background: url("https://th.bing.com/th/id/OIP.6bFWZyRfx79-GqDgNwI3yAHaEK?rs=1&pid=ImgDetMain");
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+.wrap{ 
+  border: 2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  color: white;
+  background-color:transparent;
+  border-radius: 10px;
+}
+
+.container {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  color: transparent;
+  padding: 20px; 
+   border-radius: 100px; 
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+ border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color:yellow;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color:transparent;
+  /* background-color:transparent; */
+  border-radius: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color:white;
+}
+
+input[type="number"], input[type="text"], select, input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color:white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#prediction-result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
